@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div.top{
+        display: flex;
+        flex-direction:row-reverse;
+        height: 10%;
+        width: 100%;
+        align-items: center;
+    }
+    .top p{
+        font-size: 14px;
+    }
+    div.content{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(38, 37, 37);
+        min-height: 100vh;
+    }
+    div.footer{
+        margin-top: auto;
+        position: absolute;
+        width: 100%;
+        background-color: rgb(20, 19, 19);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+        
+    }
+    .img{
+        margin: 10px;
+    }
+    body{
+        /*min-height: 100vh;*/
+        height: 100%;
+        margin: 0;
+    }
+    @media screen and (max-width: 700px) {
+        .pp{
+            font-size: 12px;
+        }
+        .img{
+            flex-grow: 0.2;
+        }
+        .head{
+            flex-grow: 1;
+        }
+        .blank{
+            flex-grow: 6;
+        }
+        
+    }
+
+    p{
+        color:rgb(209, 208, 208);
+        font-size:18px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        padding:2px 15px 2px 15px;
+    }
+</style>
+<body>
+    <div class="content">
+        <div class="top">
+            <img style=" width:30px; " class="img" src="m.png" >
+            <img style=" width:30px; " class="img" src="a.png">
+            <p class="blank"  ></p>
+            <p class="head"  >GMAIL</p>
+            <p class="head"  >IMAGES</p>
+        </div>
+
+    </div>
+   
+    <div class="footer" >
+        <p class="pp">Dark theme: On</p>
+        <p class="pp">Settings</p>
+        <p class="pp">Privacy</p>
+        <p class="pp">Terms</p>
+        <p class="pp">Advertising</p>
+        <p class="pp">Bussiness</p>
+        <p class="pp">About</p>
+        <!-- <p>fdcghjh</p>
+        <p>fdcghj</p> -->
+    </div>
+   
+    
+</body>
+</html>
