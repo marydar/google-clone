@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <style>
+    *{
+        margin :0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
     div.top{
         display: flex;
         flex-direction:row-reverse;
@@ -19,30 +24,33 @@
     div.content{
         display: flex;
         flex-direction: column;
-        background-color: rgb(38, 37, 37);
-        min-height: 95vh;
+       
+        min-height: 100vh;
     }
     div.footer{
-        margin-top: auto;
-        position: absolute;
+        bottom: 0px;
+        position: fixed;
         width: 100%;
-        background-color: rgb(20, 19, 19);
+        background-color: rgb(23, 23, 23);
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content:center;
         align-items: center;
+        padding: 10px 20px ;
         
     }
     .img{
         margin: 10px;
+        cursor: pointer;
     }
     body{
         /*min-height: 100vh;*/
         height: 100%;
         margin: 0;
+        background-color: rgb(32, 33, 36);
     }
-    @media screen and (max-width: 700px) {
+   /* @media screen and (max-width: 700px) {
         .pp{
             font-size: 12px;
         }
@@ -57,23 +65,138 @@
             display: inline-block;
         }
         
+        
+        
     }
     @media screen and (min-width: 700px) {
         .pp{
-            font-size: 20px;
+            font-size: 18px;
         }
         .blank{
             display: none;
         }
         
+        
+    }*/
+    /*@media screen and (max-width: 1100px) {
+        .center2{
+            width: 75%;
+        }
+        .googleTxt{
+            font-size:80px;
+            padding: 0;
+            line-height: 0;
+        }
+    }
+    @media screen and (min-width: 1100px) {
+        .center2{
+            width: 35%;
+        }
+        .googleTxt{
+            font-size: 120px;
+            padding: 0;
+            line-height: 0;
+        }
+    }*/
+    /*@media screen and (max-width: 1100px) {
+        
+        .googleTxt{
+            font-size:70px;
+            padding: 0;
+        }
+        .notes{
+            display: none;
+        }
+    }
+    @media screen and (min-width: 1100px) {
+        
+        .googleTxt{
+            font-size: 120px;
+            padding: 0;
+        }
+        .notes{
+            display: inline-block;
+        }
+    }*/
+    .googleTxt{
+        
+        color:aliceblue;
+        text-shadow: 5px 5px 5px rgb(13, 13, 13);
+        font-family:Arial, sans-serif;
+        margin-bottom: 16px;
+
+        
+    }
+    div.middle{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+	    justify-content: space-evenly;
+	    align-items: center;
+	    align-content: stretch;
+        margin-top: 180px;
+        padding: 0px 16px;
+    }
+    #belowSearch{
+        display: flex;
+        justify-content: space-evenly;
+	    align-items: center;
+	    align-content: stretch;
+    }
+    .notes{
+        font-size: 14px;
+        padding: 10px 20px;
+        margin: 0px 5px;
+        color: aliceblue;
+        background-color: #303134;
+        border: 1px solid #303134;
+        border-radius: 2px;
+        font-family:Arial, sans-serif;
+        cursor: pointer;
+
+    }
+    .notes:hover{
+        border: 1px solid #5f6368; 
+    }
+    .center1{
+        margin: 0px;
+        
+    }
+    .center2{
+        width: 100%;
+        max-width:580px ;
+        height: 42px;
+    }
+    .center3{
+        margin-top: 30px;
+    }
+    #searchBar{
+        border: 1px solid #5f6368;
+        border-radius: 30px;
+        
+    }
+    #searchBar:hover{
+        background-color: #5f6368;
+    }
+    .logo{
+        width: 280px;
+        margin-bottom: 20px;
+
+    }
+    .footer p{
+        margin: 8px 0px;
     }
 
     p{
         color:rgb(209, 208, 208);
-        font-size:18px;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size:14px;
+        font-family:Arial, sans-serif;
         text-align: center;
         padding:2px 15px 2px 15px;
+        cursor: pointer;
+    }
+    p:hover{
+        text-decoration: underline;
     }
 </style>
 <body>
@@ -85,8 +208,22 @@
             <p class="head"  >GMAIL</p>
             <p class="head"  >IMAGES</p>
         </div>
+        <div class="middle">
+            <div style="background-color: transparent;" class="center1" id="google" >
+                <img class="logo" src="google.png" alt="googleLogo">
+            </div>
+            <div class="center2" id="searchBar">
+
+            </div>
+            <div style="background-color: transparent;" class="center3" id="belowSearch">
+                <div class="notes">Google Search</div>
+                <div class="notes">I'm Feeling Lucky</div>
+            </div>
+        </div>
 
     </div>
+
+
    
     <div class="footer" >
         <p class="pp">Dark theme: On</p>
@@ -96,7 +233,6 @@
         <p class="pp">Advertising</p>
         <p class="pp">Bussiness</p>
         <p class="pp">About</p>
-        
         <!-- <p>fdcghjh</p>
         <p>fdcghj</p> -->
     </div>
